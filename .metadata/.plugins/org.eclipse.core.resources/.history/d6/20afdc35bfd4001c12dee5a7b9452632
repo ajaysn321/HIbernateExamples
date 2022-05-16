@@ -1,0 +1,19 @@
+package com.admin.controller;
+
+public class AdminController {
+
+	
+	public static void main(String[] args) {
+		
+		
+		while(true) {
+			 System.out.println("Hi, Welcome to Hibernate...........!");
+			 System.out.println("---------------Menu------------");
+			 System.out.println("1. Add Employee ");
+			 System.out.println("1. Add Multiple Employee ");
+			
+			
+			
+		}
+	}
+}

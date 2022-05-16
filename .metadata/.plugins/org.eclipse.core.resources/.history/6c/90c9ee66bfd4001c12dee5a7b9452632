@@ -1,0 +1,32 @@
+package com;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+
+public class TestMain {
+
+	public static void main(String[] args) {
+
+		SessionFactory sessionFactory =  HibernateUtil.getSessionFactory();
+
+		Session session = sessionFactory.openSession();
+
+		Employee stu = new Employee();
+		stu.setId(1);
+		stu.setName("ABC1");
+		stu.setAddress("Pune1");
+		
+		session.save(stu);
+		session.beginTransaction().commit();
+		
+
+		Employee emp =session.get(Employee.class, 1);
+		System.out.println("Retrieved Employee: ,"+emp);
+		
+		
+		session.close();
+		sessionFactory.close();
+		System.out.println("record Inserted ....");
+
+	}
+}

@@ -1,0 +1,7 @@
+package com.serviceImpl;
+
+import com.service.ServiceI;
+
+public class ServiceImpl implements ServiceI{
+
+}
