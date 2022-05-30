@@ -1,5 +1,0 @@
-package com.serviceImpl;
-
-public class ServiceImpl implements /Hibernate16May_CRUDExample/src/com/service/ServiceI.java{
-
-}

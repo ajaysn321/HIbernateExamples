@@ -28,7 +28,7 @@ public class HibernateUtil {
 			map.put(Environment.PASS, "password");
 			
 			map.put(Environment.DIALECT, "org.hibernate.dialect.MySQL5Dialect");
-			map.put(Environment.HBM2DDL_AUTO, "update");
+			map.put(Environment.HBM2DDL_AUTO, "create");
 			map.put(Environment.SHOW_SQL, true);
 			
 			registry = new StandardServiceRegistryBuilder().applySettings(map).build();
